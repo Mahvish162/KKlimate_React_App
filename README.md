@@ -1,4 +1,4 @@
-# 🌤️ Klimat´e — Weather Forecast Web App
+<img width="1897" height="1079" alt="Screenshot 2025-12-29 121114" src="https://github.com/user-attachments/assets/41bf8c98-b6fc-4667-94ea-cec9488dae9f" /># 🌤️ Klimat´e — Weather Forecast Web App
 
 Klimat´e is a modern, responsive weather forecasting web application that provides real-time weather insights with a clean and elegant user interface. Built using the latest frontend technologies, it focuses on performance, scalability, and great user experience.
 
@@ -43,24 +43,7 @@ Klimat´e is a modern, responsive weather forecasting web application that provi
 
 ## 📸 Screenshots
 
-*(Add screenshots or GIFs of your app here for better visibility)*
+*(k3.png)*
 
 ---
 
-## ⚙️ Installation & Setup
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/klimate-weather-app.git
-
-# Navigate to the project folder
-cd klimate-weather-app
-
-# Install dependencies
-npm install
-
-# Create a .env file and add your API key
-VITE_OPENWEATHER_API_KEY=your_api_key_here
-
-# Start the development server
-npm run dev
