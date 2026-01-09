@@ -1,73 +1,66 @@
-# React + TypeScript + Vite
+# 🌤️ Klimat´e — Weather Forecast Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Klimat´e is a modern, responsive weather forecasting web application that provides real-time weather insights with a clean and elegant user interface. Built using the latest frontend technologies, it focuses on performance, scalability, and great user experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 **[View Live Application](#)** *(https://kklimate.netlify.app/)*
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, TypeScript  
+- **Styling:** Tailwind CSS, shadcn/ui  
+- **Data Fetching & Caching:** TanStack Query  
+- **Charts & Visualization:** Recharts  
+- **API:** OpenWeather API  
+- **Deployment:** Netlify  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Features
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- 🌡️ Real-time weather data (temperature, humidity, wind speed, sky conditions)
+- 📊 Interactive weather visualizations using charts
+- ⚡ Optimized API calls with caching & background updates
+- 🎨 Modern, responsive UI with reusable components
+- 🔐 Secure API key handling using environment variables
+- 🌍 Location-based weather search
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 Key Learnings
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Efficient API integration and state management with **TanStack Query**
+- Building scalable and reusable UI components using **shadcn/ui**
+- Data visualization with **Recharts**
+- Environment variable security and deployment best practices
+- Writing clean, type-safe code using **TypeScript**
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📸 Screenshots
+
+*(Add screenshots or GIFs of your app here for better visibility)*
+
+---
+
+## ⚙️ Installation & Setup
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/klimate-weather-app.git
+
+# Navigate to the project folder
+cd klimate-weather-app
+
+# Install dependencies
+npm install
+
+# Create a .env file and add your API key
+VITE_OPENWEATHER_API_KEY=your_api_key_here
+
+# Start the development server
+npm run dev
